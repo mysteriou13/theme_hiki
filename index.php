@@ -3,9 +3,9 @@
 
 <html lang = "fr">
 
-<head>
-
-</head>
+<?php 
+get_header();
+?>
 
 <body>
 
@@ -19,7 +19,7 @@ Author URI: https://www.monsite.com/monsite
 Description:  theme du site hikikomori_france
 Version: 1.0
 */
-
+get_footer();
 ?>
 
 
