@@ -18,7 +18,12 @@ header
 icone
 </div>
 
-<nav> nav</nav>
+<nav> 
+
+<ul>
+    <li> acceuil </li>
+</ul>
+</nav>
 
 
 </div>

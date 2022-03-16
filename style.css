@@ -6,10 +6,23 @@ Theme Name : mon theme
 body{
 
     background-color: #171c2c;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+    font-size: 16px;
 }
 
 header{
 
     background-color: rgba(57,76,114,1);
+
+}
+
+nav{
+
+    color: #fcfcfc;
+}
+
+ul{
+    
+    list-style-type: none;
 
 }
