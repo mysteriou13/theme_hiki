@@ -7,7 +7,8 @@
 get_header();
 ?>
 
-<body>
+
+<body >
 
 <?php 
 
@@ -19,9 +20,20 @@ Author URI: https://www.monsite.com/monsite
 Description:  theme du site hikikomori_france
 Version: 1.0
 */
-get_footer();
+
 ?>
 
+<div id = "main">
+
+
+<div class = "d-flex">
+   
+
+<?php 
+
+get_footer();
+
+?>
 
 </body>
 </html>
