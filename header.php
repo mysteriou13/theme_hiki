@@ -7,7 +7,9 @@
 
 <link href="http://site.localhost/wp-content/themes/theme_hiki/style.css" rel="stylesheet">
 
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet"> 
 </head>
 
 <div>
@@ -22,7 +24,7 @@
 
 <nav> 
 
-<ul class = "d-flex">
+<ul class = "d-flex  justify-content-around">
 
     <li> Pubs Projets de reclus/hiki</li>
 

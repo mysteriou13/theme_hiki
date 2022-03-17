@@ -26,7 +26,7 @@ Version: 1.0
 <div id = "main">
 
 
-<div class = "d-flex">
+<div class = "d-flex ">
    
 
 <?php 
