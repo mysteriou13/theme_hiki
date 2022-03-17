@@ -49,13 +49,12 @@
 </ul>
 </nav>
 
-
-</div>
-
-<div>
-    
 </div>
 
 </div>
 
 </header>
+
+<div>
+<img src="https://hikikomori-france.fr/wp-content/uploads/2020/06/headerhiki1opti.jpg" class="header-image" alt="" >
+</div>
