@@ -13,13 +13,14 @@ body{
 header{
 
     background-color: rgba(57,76,114,1);
-
+     height:8vh;
 }
 
 nav{
 
     color: #fcfcfc;
     text-transform: uppercase;
+    width: 67%;
 }
 
 ul{
@@ -28,18 +29,31 @@ font-size: 16px;
 list-style-type: none;
 line-height: 1.5;
 
-
+position: relative;
+top: 30%;
 
 }
 
 li{
-
-
-    font-family: 'Pangolin';
-
-   
-
+    font-family: 'Pangolin';  
     color:#fcfcfc;
     font-weight: 700;
     text-transform: uppercase;
+     cursor:pointer;
+    padding-top: 10px;
+   
+
+}
+
+li:hover{
+    border-top: 2px solid #23365b;
+
+}
+
+.logo{
+
+    position: relative;
+    top: 23%;
+    left: 41%;
+
 }

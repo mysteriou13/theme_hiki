@@ -18,7 +18,7 @@
 
 <div>
 
-<img src="https://hikikomori-france.fr/wp-content/uploads/2019/06/cropped-petitlogopng.png" class="custom-logo" alt="Hikikomori France" width="48" height="48">
+<img src="https://hikikomori-france.fr/wp-content/uploads/2019/06/cropped-petitlogopng.png" class=" logo custom-logo" alt="Hikikomori France" width="48" height="48">
 
 </div>
 
@@ -44,7 +44,7 @@
 
    <li> Page officielle Facebook</li>
        
-    <lli> Accueil </li>
+    <li> Accueil </li>
 
 </ul>
 </nav>
