@@ -8,6 +8,9 @@ body{
     background-color: #171c2c;
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
     font-size: 16px;
+    margin-right: 5%;
+    margin-left: 5%;
+
 }
 
 header{
@@ -21,6 +24,7 @@ nav{
     color: #fcfcfc;
     text-transform: uppercase;
     width: 67%;
+    margin-right: 2%;
 }
 
 ul{
