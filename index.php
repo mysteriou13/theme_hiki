@@ -27,7 +27,25 @@ Version: 1.0
 
 
 <div class = "d-flex ">
-   
+
+<div class = "div_link">
+    lien
+</div>
+
+<div  class = "position_text">
+
+<h1>  Bienvenue sur Hikikomori-France  </h1>
+
+<p class = "color_text">
+
+Site regroupant les hikikomori ainsi que les reclus sociaux, les asociaux, tout ceux qui ne s’intègrent pas dans la société
+
+</p>
+
+
+</div>
+
+</div>
 
 <?php 
 

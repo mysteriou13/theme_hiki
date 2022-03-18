@@ -68,3 +68,38 @@ li:hover{
     width: 100%;
 
 }
+
+.div_link{
+
+    background-color: rgba(38,38,38,1);
+
+    width: 31vh;
+}
+
+h1{
+
+    color: #798DAE;
+font-family: "Gafata",Sans-serif;
+font-size: 38px;
+font-weight: 100;
+letter-spacing: 7.4px;
+}
+
+
+.color_text{
+
+    color: #798DAE;
+    font-family: "Gafata",Sans-serif;
+   
+
+}
+
+.position_text{
+
+    position: absolute;
+    left: 29%;
+    top: 53%;
+
+  }
+
+}
