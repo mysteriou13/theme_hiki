@@ -1,8 +1,25 @@
 <?php 
   
+ 
   $hote = $_SERVER['HTTP_HOST']; 
+
+   $protocle = null;
+
+ if ($_SERVER['HTTPS'] == 'on') {
+
+      
    
-  $style= "http://".$hote."/wp-content/themes/theme_hiki/style.css"
+         $protocle = "https";
+         
+    } else {
+    
+     
+
+        $protocle = "http";
+
+    }
+      
+  $style= $protocle."://".$hote."/wp-content/themes/theme_hiki/style.css"
 
 ?>
 
