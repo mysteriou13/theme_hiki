@@ -26,30 +26,6 @@ ul {
   position: relative;
   top: 30%; }
 
-.logo {
-  position: relative;
-  top: 23%;
-  left: 41%; }
-
-.header-image {
-  width: 100%; }
-
-.div_link {
-  background-color: #262626;
-  width: 31vh; }
-
-h1 {
-  color: #798DAE;
-  font-family: "Gafata",Sans-serif;
-  font-size: 38px;
-  font-weight: 100;
-  letter-spacing: 7.4px; }
-
-.position_text {
-  position: absolute;
-  left: 29%;
-  top: 53%; }
-
 li {
   font-family: 'Pangolin';
   color: #fcfcfc;
@@ -57,7 +33,7 @@ li {
   text-transform: uppercase;
   cursor: pointer;
   padding-top: 10px; }
-  li:hover {
+  li__hover {
     border-top: 2px solid #23365b; }
 
 .color_text {

@@ -1,0 +1,14 @@
+li{
+
+    font-family: 'Pangolin';  
+    color:$white;
+    font-weight: 700;
+    text-transform: uppercase;
+     cursor:pointer;
+    padding-top: 10px;
+
+    &:hover{
+        border-top: 2px solid #23365b;
+    }
+
+}
