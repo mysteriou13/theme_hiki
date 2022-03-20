@@ -29,17 +29,6 @@ list-style-type: none;
 line-height: 1.5;
 
 position: relative;
-top: 30%;
-
-}
-
-.logo{
-
-
-
-    position: relative;
-    top: 23%;
-    left: 41%;
 
 }
 
@@ -75,4 +64,17 @@ letter-spacing: 7.4px;
     top: 53%;
 
   }
+
+.category{
+
+    display: none;
+    background-color: $blue-header;
+
+}
+
+a{
+
+    color:white;
+
+}
 

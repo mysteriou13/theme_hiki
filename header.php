@@ -1,7 +1,6 @@
 <?php 
   
- 
-  $hote = $_SERVER['HTTP_HOST']; 
+   $hote = $_SERVER['HTTP_HOST']; 
 
    $protocle = null;
 
@@ -19,11 +18,40 @@
 
     }
       
-  $style= $protocle."://".$hote."/wp-content/themes/theme_hiki/style.css"
+  $style = $protocle."://".$hote."/wp-content/themes/theme_hiki/style.css";
+
+  $file =  dirname(__FILE__);
+
+  $pieces = explode("wp-content", $file);
+
+  
+      $file =  dirname(__FILE__);
+
+    $pieces = explode("wp-content", $file);
+
+    $javascript = $protocle."://".$hote."/wp-content/themes/theme_hiki/javascript/mouseaffiche.js";
+
+
+    $js =  $protocle."://".$hote."/wp-content/themes/theme_hiki/javascript/mouseaffiche.js";
 
 ?>
 
 <header>
+
+<?php 
+
+$plugins = $pieces[0]."/wp-content/plugins/";
+
+$full_theme_hiki = $plugins."full_theme_bulder/";
+
+$full_sql = $full_theme_hiki."sql.php";
+
+include($full_sql);
+
+$sql = new \data\sql();
+
+
+?>
 
 <head>
 
@@ -35,6 +63,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet"> 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script id = "myScript" src = "<?php echo $js; ?>">  </script>
+
 </head>
 
 <div>
@@ -43,7 +76,7 @@
 
 <div>
 
-<img src="https://hikikomori-france.fr/wp-content/uploads/2019/06/cropped-petitlogopng.png" class=" logo custom-logo" alt="Hikikomori France" width="48" height="48">
+<img src="https://hikikomori-france.fr/wp-content/uploads/2019/06/cropped-petitlogopng.png" class="  custom-logo" alt="Hikikomori France" width="48" height="48">
 
 </div>
 
@@ -53,7 +86,19 @@
 
     <li> Pubs Projets de reclus/hiki</li>
 
-    <li>Catégories</li>
+    <li id = "category" onmouseover = '$("#liste_category").show();' onmouseout = '$("#liste_category").hide();'>
+      Catégories
+    
+      <p id  = "liste_category" class = "category">
+      <?php 
+    
+    $sql->liste_category();
+
+      ?>
+  
+</p>
+
+    </li>
     
     <li>F.A.Q.</li>
 

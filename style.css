@@ -23,13 +23,7 @@ ul {
   font-size: 16px;
   list-style-type: none;
   line-height: 1.5;
-  position: relative;
-  top: 30%; }
-
-.logo {
-  position: relative;
-  top: 23%;
-  left: 41%; }
+  position: relative; }
 
 .header-image {
   width: 100%; }
@@ -49,6 +43,13 @@ h1 {
   position: absolute;
   left: 29%;
   top: 53%; }
+
+.category {
+  display: none;
+  background-color: #394c72; }
+
+a {
+  color: white; }
 
 li {
   font-family: 'Pangolin';
