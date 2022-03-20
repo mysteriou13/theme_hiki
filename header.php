@@ -20,9 +20,17 @@
       
   $style = $protocle."://".$hote."/wp-content/themes/theme_hiki/style.css";
 
+  $hote = $protocle."://".$hote;
+
+  $login = "/wp-login.php";
+
+  $index = $hote."/index.php";
+
   $file =  dirname(__FILE__);
 
   $pieces = explode("wp-content", $file);
+
+  $login = $file."/formulaire/form_login.php";
 
   
       $file =  dirname(__FILE__);
@@ -40,6 +48,8 @@
 
 <?php 
 
+
+
 $plugins = $pieces[0]."/wp-content/plugins/";
 
 $full_theme_hiki = $plugins."full_theme_bulder/";
@@ -49,6 +59,8 @@ $full_sql = $full_theme_hiki."sql.php";
 include($full_sql);
 
 $sql = new \data\sql();
+
+
 
 
 ?>
@@ -121,7 +133,23 @@ $sql = new \data\sql();
 
 </div>
 
+
+<?php 
+
+global $current_user;
+
+if(isset($current_user->user_login)){
+
+include($login);
+
+}
+
+?>
+
+
 </div>
+
+
 
 </header>
 
