@@ -1,6 +1,5 @@
-<?php 
-echo '
-<form name="loginform" id="loginform" action="<?php echo $login?>"  method="post">
+
+<form name="loginform" id="loginform" action="<?php echo $login_url; ?>"  method="post">
 
 
   <div class = "d-flex  justify-content-end">
@@ -23,5 +22,4 @@ echo '
 </div>
 
 			
-		</form>';
-        ?>
+		</form>

@@ -10,13 +10,12 @@ body {
   margin-left: 5%; }
 
 header {
-  background-color: #394c72;
-  height: 8vh; }
+  background-color: #394c72; }
 
 nav {
   color: #fcfcfc;
   text-transform: uppercase;
-  width: 70%;
+  width: 100%;
   margin-right: 2%; }
 
 ul {
@@ -49,7 +48,8 @@ h1 {
   background-color: #394c72; }
 
 a {
-  color: white; }
+  color: white;
+  text-decoration: none; }
 
 li {
   font-family: 'Pangolin';

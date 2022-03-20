@@ -1,5 +1,7 @@
 <?php 
-  
+
+global $current_user;
+
    $hote = $_SERVER['HTTP_HOST']; 
 
    $protocle = null;
@@ -22,7 +24,7 @@
 
   $hote = $protocle."://".$hote;
 
-  $login = "/wp-login.php";
+  $login_url = $hote."/wp-login.php";
 
   $index = $hote."/index.php";
 
@@ -32,7 +34,10 @@
 
   $login = $file."/formulaire/form_login.php";
 
+  $logout = "wp_logout_url( home_url() ); "; 
   
+  $logout_url = wp_logout_url($hote);
+
       $file =  dirname(__FILE__);
 
     $pieces = explode("wp-content", $file);
@@ -116,18 +121,57 @@ $sql = new \data\sql();
 
     <li> Contact</li>
 
+    <?php 
+
+ if(isset($current_user->user_login)){
+echo '
     <li>Mon profil</li>
+';
 
-        <li> Connexion</li>
-
+}
+    ?>
         <li> Inscription </li>
 
         <li> Membres </li>
 
    <li> Page officielle Facebook</li>
-       
+   
+   <?php 
+   
+
+
+   ?>
+
     <li> Accueil </li>
 
+    
+
+
+    <?php 
+
+if(isset($current_user->user_login)){
+  
+  
+  echo '
+<li>
+
+  <a  class = "link-light" href="';
+  
+   echo wp_logout_url( home_url() );
+
+  
+  echo '
+
+  " title="Logout"> deconnection</a>
+
+</li>
+  ';
+
+
+
+}
+
+       ?>
 </ul>
 </nav>
 
@@ -136,9 +180,8 @@ $sql = new \data\sql();
 
 <?php 
 
-global $current_user;
 
-if(isset($current_user->user_login)){
+if(!isset($current_user->user_login)){
 
 include($login);
 
