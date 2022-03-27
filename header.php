@@ -38,9 +38,7 @@ global $current_user;
   
   $logout_url = wp_logout_url($hote);
 
-      $file =  dirname(__FILE__);
-
-    $pieces = explode("wp-content", $file);
+   $pieces = explode("wp-content", $file);
 
     $javascript = $protocle."://".$hote."/wp-content/themes/theme_hiki/javascript/mouseaffiche.js";
 
@@ -61,12 +59,15 @@ $full_theme_hiki = $plugins."full_theme_bulder/";
 
 $full_sql = $full_theme_hiki."sql.php";
 
+$full_affiche = $full_theme_hiki."affiche.php";
+
 include($full_sql);
+
+include($full_affiche);
 
 $sql = new \data\sql();
 
-
-
+$affiche = new \affiche\afficher();
 
 ?>
 
@@ -166,7 +167,6 @@ if(isset($current_user->user_login)){
 
 </li>
   ';
-
 
 
 }

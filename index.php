@@ -4,7 +4,12 @@
 <html lang = "fr">
 
 <?php 
-get_header();
+
+$file =  dirname(__FILE__);
+
+include($file."/header.php");
+
+
 ?>
 
 
@@ -36,16 +41,27 @@ Version: 1.0
 
 <h1>  Bienvenue sur Hikikomori-France  </h1>
 
-<p class = "color_text">
+<div class = "color_text">
 
 Site regroupant les hikikomori ainsi que les reclus sociaux, les asociaux, tout ceux qui ne s’intègrent pas dans la société
 
-</p>
+</div>
+
+<div>
+
+<?php 
+
+?>
+
+</div>
 
 
 </div>
 
+
 </div>
+
+
 
 <?php 
 
