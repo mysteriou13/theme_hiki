@@ -20,6 +20,12 @@ global $current_user;
 
     }
       
+  $image = $protocle."://".$hote.'/wp-content/themes/theme_hiki/image/';
+
+ $logo = $image.'cropped-petitlogopng.png';
+
+ $image_header = $image.'headerhiki1opti.jpg';
+
   $style = $protocle."://".$hote."/wp-content/themes/theme_hiki/style.css";
 
   $hote = $protocle."://".$hote;
@@ -94,7 +100,7 @@ $affiche = new \affiche\afficher();
 
 <div>
 
-<img src="https://hikikomori-france.fr/wp-content/uploads/2019/06/cropped-petitlogopng.png" class="  custom-logo" alt="Hikikomori France" width="48" height="48">
+<img src= <?php echo $logo ?> class="  custom-logo" alt="Hikikomori France" width="48" height="48">
 
 </div>
 
@@ -197,5 +203,5 @@ include($login);
 </header>
 
 <div>
-<img src="https://hikikomori-france.fr/wp-content/uploads/2020/06/headerhiki1opti.jpg" class="header-image" alt="" >
+<img src="<?php echo $image_header ?>" class="header-image" alt="" >
 </div>
