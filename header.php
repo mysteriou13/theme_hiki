@@ -113,12 +113,8 @@ $affiche = new \affiche\afficher();
     <li id = "category" onmouseover = '$("#liste_category").show();' onmouseout = '$("#liste_category").hide();'>
       Catégories
     
-      <p id  = "liste_category" class = "category">
-      <?php 
-    
-    $sql->liste_category();
-
-      ?>
+      <p >
+  
   
 </p>
 
@@ -202,6 +198,19 @@ include($login);
 
 </header>
 
-<div>
-<img src="<?php echo $image_header ?>" class="header-image" alt="" >
+<div  style = "background-image: url('<?php echo $image_header?>'); background-repeat: no-repeat; height:44vh
+
+">
+
+
+<div id  = "liste_category" class = "category" >
+
+<?php 
+
+wp_list_categories("title_li=");
+
+?>
+
+</div>
+
 </div>

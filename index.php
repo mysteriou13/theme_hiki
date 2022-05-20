@@ -3,6 +3,7 @@
 
 <html lang = "fr">
 
+site hiki
 <?php 
 
 $file =  dirname(__FILE__);
@@ -47,13 +48,7 @@ Site regroupant les hikikomori ainsi que les reclus sociaux, les asociaux, tout 
 
 </div>
 
-<div>
 
-<?php 
-
-?>
-
-</div>
 
 
 </div>

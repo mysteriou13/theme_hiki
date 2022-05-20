@@ -57,12 +57,19 @@ li {
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
-  padding-top: 10px; }
+  padding-top: 10px;
+  list-style: none; }
   li:hover {
     border-top: 2px solid #23365b; }
 
 .color_text {
   color: #798DAE;
   font-family: "Gafata",Sans-serif; }
+
+.category {
+  background-color: #394c72;
+  width: 29vh;
+  position: relative;
+  left: 47vh; }
 
 /*# sourceMappingURL=style.css.map */
