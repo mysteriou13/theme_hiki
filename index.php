@@ -3,7 +3,6 @@
 
 <html lang = "fr">
 
-site hiki
 <?php 
 
 $file =  dirname(__FILE__);

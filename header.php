@@ -46,10 +46,6 @@ global $current_user;
 
    $pieces = explode("wp-content", $file);
 
-    $javascript = $protocle."://".$hote."/wp-content/themes/theme_hiki/javascript/mouseaffiche.js";
-
-
-    $js =  $protocle."://".$hote."/wp-content/themes/theme_hiki/javascript/mouseaffiche.js";
 
 ?>
 
@@ -90,7 +86,15 @@ $affiche = new \affiche\afficher();
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-<script id = "myScript" src = "<?php echo $js; ?>">  </script>
+<script id = "myScript" >  
+
+<?php 
+
+include($file."/javascript/mouseaffiche.js");
+
+?>
+
+</script>
 
 </head>
 
@@ -110,8 +114,8 @@ $affiche = new \affiche\afficher();
 
     <li> Pubs Projets de reclus/hiki</li>
 
-    <li id = "category" onmouseover = '$("#liste_category").show();' onmouseout = '$("#liste_category").hide();'>
-      Catégories
+    <li id = "category" onclick = "mouseaffichage('#liste_category',this.id)">
+      Catégories+
     
       <p >
   
@@ -212,5 +216,6 @@ wp_list_categories("title_li=");
 ?>
 
 </div>
+
 
 </div>

@@ -67,6 +67,7 @@ li {
   font-family: "Gafata",Sans-serif; }
 
 .category {
+  display: none;
   background-color: #394c72;
   width: 29vh;
   position: relative;
