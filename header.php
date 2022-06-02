@@ -1,32 +1,14 @@
 <?php 
 
 global $current_user;
-
-   $hote = $_SERVER['HTTP_HOST']; 
-
-   $protocle = null;
-
- if ($_SERVER['HTTPS'] == 'on') {
-
       
-   
-         $protocle = "https";
-         
-    } else {
-    
-     
-
-        $protocle = "http";
-
-    }
-      
-  $image = $protocle."://".$hote.'/wp-content/themes/theme_hiki/image/';
+  $image = site_url().'/wp-content/themes/theme_hiki/image/';
 
  $logo = $image.'cropped-petitlogopng.png';
 
  $image_header = $image.'headerhiki1opti.jpg';
 
-  $style = $protocle."://".$hote."/wp-content/themes/theme_hiki/style.css";
+  $style = site_url()."/wp-content/themes/theme_hiki/style.css";
 
   $hote = $protocle."://".$hote;
 
@@ -44,34 +26,29 @@ global $current_user;
   
   $logout_url = wp_logout_url($hote);
 
-   $pieces = explode("wp-content", $file);
+   $pieces = explode("wp-content", $file);$plugins = $pieces[0]."/wp-content/plugins/";
+
+   $full_theme_hiki = $plugins."full_theme_bulder/";
+   
+   $full_sql = $full_theme_hiki."sql.php";
+   
+   $full_affiche = $full_theme_hiki."affiche.php";
+   
+   include($full_sql);
+   
+   include($full_affiche);
+   
+   $sql = new \data\sql();
+   
+   $affiche = new \affiche\afficher();
+
+
+
 
 
 ?>
 
 <header>
-
-<?php 
-
-
-
-$plugins = $pieces[0]."/wp-content/plugins/";
-
-$full_theme_hiki = $plugins."full_theme_bulder/";
-
-$full_sql = $full_theme_hiki."sql.php";
-
-$full_affiche = $full_theme_hiki."affiche.php";
-
-include($full_sql);
-
-include($full_affiche);
-
-$sql = new \data\sql();
-
-$affiche = new \affiche\afficher();
-
-?>
 
 <head>
 
