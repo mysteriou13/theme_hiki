@@ -9,7 +9,6 @@ $file =  dirname(__FILE__);
 
 include($file."/header.php");
 
-
 ?>
 
 
@@ -49,20 +48,32 @@ Site regroupant les hikikomori ainsi que les reclus sociaux, les asociaux, tout 
 
 
 
+<div class = "text-light">
 
-</div>
-
-
-</div>
+<?php
 
 
+if(!isset($_GET['cat']) ){
 
-<?php 
+$affiche->affiche_liste_post();
 
-get_footer();
-
+}
 
 ?>
+</div>
+
+
+ 
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
 
 
 

@@ -170,6 +170,7 @@ include($login);
 
 }
 
+
 ?>
 
 
@@ -188,7 +189,8 @@ include($login);
 
 <?php 
 
-wp_list_categories("title_li=");
+$affiche->affiche_liste_category();
+
 
 ?>
 
