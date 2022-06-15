@@ -57,9 +57,17 @@ if(!isset($_GET['cat']) ){
 
 $affiche->affiche_liste_post();
 
+}else{
+        
+    echo $affiche->category_post($_GET['cat']);
 }
-
 ?>
+</div>
+
+
+</div>
+
+
 </div>
 
 

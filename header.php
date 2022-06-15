@@ -189,7 +189,8 @@ include($login);
 
 <?php 
 
-$affiche->affiche_liste_category();
+wp_list_categories("title_li=");
+
 
 
 ?>
