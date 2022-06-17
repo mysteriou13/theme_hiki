@@ -53,15 +53,34 @@ Site regroupant les hikikomori ainsi que les reclus sociaux, les asociaux, tout 
 <?php
 
 
-if(!isset($_GET['cat']) ){
+if(!isset($_GET['cat']) && !isset($_GET['p'])){
 
 $affiche->affiche_liste_post();
 
-}else{
+}
+
+if(isset($_GET['cat'])){
         
     echo $affiche->category_post($_GET['cat']);
 }
+
+if(isset($_GET['p']) && !empty($_GET['p'])){
+    
+    $billet = get_post(htmlspecialchars($_GET['p']));
+    $title = $billet->post_title;
+	$date = $billet->post_date;
+	$contenu = $billet->post_content;
+	$contenu = apply_filters('the_content', $contenu);
+	$contenu = str_replace(']]>', ']]>', $contenu);
+}
+
+
 ?>
+
+<div id="billet">
+	<?php echo "<h1>$title</h1><p>$contenu</p><strong>$date</strong>"; ?>
+</div>
+
 </div>
 
 
