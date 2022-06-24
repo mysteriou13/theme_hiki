@@ -10,11 +10,9 @@ global $current_user;
 
   $style = site_url()."/wp-content/themes/theme_hiki/style.css";
 
-  $hote = $protocle."://".$hote;
+  $login_url = site_url()."/wp-login.php";
 
-  $login_url = $hote."/wp-login.php";
-
-  $index = $hote."/index.php";
+  $index = site_url()."/index.php";
 
   $file =  dirname(__FILE__);
 
