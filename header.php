@@ -24,27 +24,77 @@ global $current_user;
   
   $logout_url = wp_logout_url($hote);
 
-   $pieces = explode("wp-content", $file);$plugins = $pieces[0]."/wp-content/plugins/";
+   $pieces = explode("wp-content", $file);
+   
+   $plugins = $pieces[0]."/wp-content/plugins/";
 
    $full_theme_hiki = $plugins."full_theme_bulder/";
    
    $full_sql = $full_theme_hiki."sql.php";
    
    $full_affiche = $full_theme_hiki."affiche.php";
+
+   $menu_header = $full_theme_hiki."header.php";
+
+   $forget_pass = site_url()."/?login=forgot_login";
    
    include($full_sql);
    
    include($full_affiche);
    
+   include($menu_header);
+
    $sql = new \data\sql();
    
    $affiche = new \affiche\afficher();
 
-
-
+   $menu_header = new \menu_header\menu_header();
+   
 
 
 ?>
+
+<div class = "text-light">
+
+<?php if(current_user_can('administrator')) { ?>
+
+  <?php 
+    
+    $affiche->afficher_el_header();
+
+    ?>
+
+<div>
+
+
+<div>
+
+<div id = "add_link_nav"   onclick = "mouseaffichage('#form_nav_link',this.id,'ajouter un lien+',' ajouter un lien-')">
+ajouter un lien +
+</div>
+
+<div id = "form_nav_link"  style = "display:none">
+
+<?php 
+
+include("./wp-content/themes/theme_hiki/formulaire/form_add_el_header.php");
+
+?>
+
+</div>
+
+</div>
+
+</div>
+
+    <?php } ?>
+
+</div>
+
+<div class =  "text-light">
+
+
+</div>
 
 <header>
 
@@ -89,7 +139,7 @@ include($file."/javascript/mouseaffiche.js");
 
     <li> Pubs Projets de reclus/hiki</li>
 
-    <li id = "category" onclick = "mouseaffichage('#liste_category',this.id)">
+    <li id = "category" onclick = "mouseaffichage('#liste_category',this.id,'Catégories+',' Catégorie-')">
       Catégories+
     
       <p >

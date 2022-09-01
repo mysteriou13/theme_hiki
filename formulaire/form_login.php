@@ -21,5 +21,11 @@
 				<input type="hidden" name="redirect_to" value="<?php echo $index?>" />
 </div>
 
+<div>
+
+ <a href = "<?php echo $forget_pass ?>"> mot de pass oublié </a>
+
+</div>
+
 			
 		</form>
