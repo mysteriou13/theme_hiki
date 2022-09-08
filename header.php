@@ -1,7 +1,9 @@
 <?php 
 
+global $wpdb;
+
 global $current_user;
-      
+
   $image = site_url().'/wp-content/themes/theme_hiki/image/';
 
  $logo = $image.'cropped-petitlogopng.png';
@@ -29,7 +31,7 @@ global $current_user;
    $plugins = $pieces[0]."/wp-content/plugins/";
 
    $full_theme_hiki = $plugins."full_theme_bulder/";
-   
+
    $full_sql = $full_theme_hiki."sql.php";
    
    $full_affiche = $full_theme_hiki."affiche.php";
@@ -38,11 +40,15 @@ global $current_user;
 
    $forget_pass = site_url()."/?login=forgot_login";
    
-   include($full_sql);
+   require_once $full_sql;
    
-   include($full_affiche);
+   require_once $full_affiche;
    
-   include($menu_header);
+   require_once $menu_header;
+
+   require_once $full_theme_hiki."/mail.php";
+
+
 
    $sql = new \data\sql();
    
@@ -50,6 +56,8 @@ global $current_user;
 
    $menu_header = new \menu_header\menu_header();
    
+   $mail = new \mails\mail(true);
+
 
 
 ?>

@@ -12,7 +12,7 @@ include($file."/header.php");
 ?>
 
 
-<body >
+<body>
 
 <?php 
 
@@ -29,12 +29,9 @@ Version: 1.0
 
 <div id = "main">
 
-
 <div class = "d-flex ">
 
-<div class = "div_link">
-    lien
-</div>
+
 
 <div  class = "position_text">
 
@@ -45,7 +42,6 @@ Version: 1.0
 Site regroupant les hikikomori ainsi que les reclus sociaux, les asociaux, tout ceux qui ne s’intègrent pas dans la société
 
 </div>
-
 
 
 <div class = "text-light">
