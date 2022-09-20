@@ -29,7 +29,7 @@ list-style-type: none;
 line-height: 1.5;
 
 position: relative;
-
+top:20%;
 }
 
 
@@ -72,10 +72,22 @@ letter-spacing: 7.4px;
 
 }
 
+.link_nav{
+
+    color: white;
+    text-decoration: none;
+
+    :hover{
+
+        color: white;
+        text-decoration: none;
+
+    }
+}
+
 a{
 
     color:white;
-    text-decoration:none;
 
 }
 

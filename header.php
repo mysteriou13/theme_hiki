@@ -48,8 +48,9 @@ global $current_user;
 
    require_once $full_theme_hiki."/mail.php";
 
+   require_once $full_theme_hiki."/template.php";
 
-
+  
    $sql = new \data\sql();
    
    $affiche = new \affiche\afficher();
@@ -58,6 +59,7 @@ global $current_user;
    
    $mail = new \mails\mail(true);
 
+   $template = new \template\template;
 
 
 ?>
@@ -119,6 +121,8 @@ include("./wp-content/themes/theme_hiki/formulaire/form_add_el_header.php");
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <script id = "myScript" >  
 
 <?php 
@@ -157,9 +161,9 @@ include($file."/javascript/mouseaffiche.js");
 
     </li>
     
-    <li>F.A.Q.</li>
+    <li  >F.A.Q.</li>
 
-    <li> Contact</li>
+    <li class = "link_nav"> <a href = "./?login=contact" class = "link_nav"> Contact </a> </li>
 
     <?php 
 
