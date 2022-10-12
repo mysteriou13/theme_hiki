@@ -186,7 +186,7 @@ echo '
 
    ?>
 
-    <li> Accueil </li>
+    <li> <a href = "./"> Accueil </a> </li>
 
     
 

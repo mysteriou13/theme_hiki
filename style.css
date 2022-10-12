@@ -82,4 +82,9 @@ li {
 #add_link_nav {
   cursor: pointer; }
 
+a {
+  text-decoration: none; }
+  a:hover {
+    color: white; }
+
 /*# sourceMappingURL=style.css.map */
