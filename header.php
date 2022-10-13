@@ -149,7 +149,7 @@ include($file."/javascript/mouseaffiche.js");
 
 <ul class = "d-flex  justify-content-around">
 
-    <li> Pubs Projets de reclus/hiki</li>
+    <li> <a href = "./?login=pub"> Pubs Projets de reclus/hiki </a> </li>
 
     <li id = "category" onclick = "mouseaffichage('#liste_category',this.id,'Catégories+',' Catégorie-')">
       Catégories+
@@ -161,7 +161,7 @@ include($file."/javascript/mouseaffiche.js");
 
     </li>
     
-    <li  >F.A.Q.</li>
+    <li> <a href = "./?login=faq"> F.A.Q. </a> </li>
 
     <li class = "link_nav"> <a href = "./?login=contact" class = "link_nav"> Contact </a> </li>
 
@@ -174,9 +174,9 @@ echo '
 
 }
     ?>
-        <li> Inscription </li>
+        <li> <a href = "./?login=inscription"> Inscription </a> </li>
 
-        <li> Membres </li>
+        <li> <a href = "./?login=membre"> Membres </a> </li>
 
    <li> Page officielle Facebook</li>
    
