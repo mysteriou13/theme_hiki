@@ -87,4 +87,11 @@ a {
   a:hover {
     color: white; }
 
+.center_button {
+  position: relative;
+  left: 50%; }
+
+.margin_bottom_submit {
+  margin-bottom: 5%; }
+
 /*# sourceMappingURL=style.css.map */

@@ -2,7 +2,7 @@
 <form name="loginform" id="loginform" action="<?php echo $login_url; ?>"  method="post">
 
 
-  <div class = "d-flex  justify-content-end">
+  <div class = "d-flex  justify-content-evenly">
 			<div class="login-username">
 				<label for="user_login" class = "link-light">
     
