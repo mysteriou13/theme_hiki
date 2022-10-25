@@ -35,9 +35,9 @@ Version: 1.0
 
 <div  class = "position_text">
 
-<h1>  Bienvenue sur Hikikomori-France  </h1>
+<h1 class = "text-light">  Bienvenue sur Hikikomori-France  </h1>
 
-<div class = "color_text">
+<div class = "text-light">
 
 Site regroupant les hikikomori ainsi que les reclus sociaux, les asociaux, tout ceux qui ne s’intègrent pas dans la société
 
@@ -76,24 +76,23 @@ if(isset($_GET['p']) && !empty($_GET['p'])){
 
 if(isset($_GET['login']) && !empty($_GET['login'])){
 
-    $login = $file."/template/".htmlspecialchars($_GET['login'].".php");
+    $login = $full_theme_hiki."/template/".htmlspecialchars($_GET['login'].".php");
 
 
     if(file_exists($login)){
 
-    require($file."/template/".htmlspecialchars($_GET['login'].".php"));
+    require($full_theme_hiki."/template/".htmlspecialchars($_GET['login'].".php"));
 
     }
+
+   
 }
 
 
 
+require_once($file."/footer.php");
+
 ?>
-
-
-
-
-
 
 </body>
 </html>

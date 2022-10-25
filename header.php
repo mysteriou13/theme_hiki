@@ -4,6 +4,7 @@ global $wpdb;
 
 global $current_user;
 
+
   $image = site_url().'/wp-content/themes/theme_hiki/image/';
 
  $logo = $image.'cropped-petitlogopng.png';
@@ -64,10 +65,24 @@ global $current_user;
 
 ?>
 
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 <div class = "text-light">
+<script type="text/javascript">
+
+
+<?php 
+
+require_once($full_theme_hiki."./js/form_inscription.js");
+
+
+?>
+
+</script>
 
 <?php if(current_user_can('administrator')) { ?>
-
   <?php 
     
     $affiche->afficher_el_header();
@@ -115,9 +130,19 @@ include("./wp-content/themes/theme_hiki/formulaire/form_add_el_header.php");
 
 <link href="<?php echo $style ?>" rel="stylesheet">
 
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet"> 
+
+<style>
+  <?php 
+  
+  include_once($full_theme_hiki."/style.css");
+  
+  
+  ?>
+  </style>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -132,6 +157,8 @@ include($file."/javascript/mouseaffiche.js");
 ?>
 
 </script>
+
+
 
 </head>
 
