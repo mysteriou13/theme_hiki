@@ -17,7 +17,7 @@ global $current_user;
 
   $index = site_url()."/index.php";
 
-  $file =  dirname(__FILE__);
+  echo $file =  dirname(__FILE__);
 
   $pieces = explode("wp-content", $file);
 
@@ -25,7 +25,7 @@ global $current_user;
 
   $logout = "wp_logout_url( home_url() ); "; 
   
-  $logout_url = wp_logout_url($hote);
+  $logout_url = wp_logout_url($logout);
 
    $pieces = explode("wp-content", $file);
    
