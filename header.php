@@ -17,7 +17,7 @@ global $current_user;
 
   $index = site_url()."/index.php";
 
-  echo $file =  dirname(__FILE__);
+  $file =  dirname(__FILE__);
 
   $pieces = explode("wp-content", $file);
 
@@ -33,34 +33,12 @@ global $current_user;
 
    $full_theme_hiki = $plugins."full_theme_bulder/";
 
-   $full_sql = $full_theme_hiki."sql.php";
-   
-   $full_affiche = $full_theme_hiki."affiche.php";
-
-   $menu_header = $full_theme_hiki."header.php";
+ 
 
    $forget_pass = site_url()."/?login=forgot_login";
    
-   require_once $full_sql;
-   
-   require_once $full_affiche;
-   
-   require_once $menu_header;
-
-   require_once $full_theme_hiki."/mail.php";
-
-   require_once $full_theme_hiki."/template.php";
-
   
-   $sql = new \data\sql();
-   
-   $affiche = new \affiche\afficher();
-
-   $menu_header = new \menu_header\menu_header();
-   
-   $mail = new \mails\mail(true);
-
-   $template = new \template\template;
+   require_once $full_theme_hiki."/index.php";
 
 
 ?>
