@@ -74,6 +74,10 @@ h1 {
 a {
   color: white; }
 
+.aside {
+  background-color: #262626;
+  width: 46%; }
+
 li {
   font-family: 'Pangolin';
   color: #fcfcfc;
@@ -110,5 +114,9 @@ a {
 
 .margin_bottom_submit {
   margin-bottom: 5%; }
+
+.link_aside {
+  font-family: 'Open Sans', sans-serif;
+  color: #dd3333; }
 
 /*# sourceMappingURL=style.css.map */

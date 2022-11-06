@@ -72,6 +72,14 @@ require_once($full_theme_hiki."./js/form_inscription.js");
 
 <div>
 
+<div>
+  <?php 
+  
+  $aside->insert_aside();
+
+  ?>
+</div>
+
 <div id = "add_link_nav"   onclick = "mouseaffichage('#form_nav_link',this.id,'ajouter un lien+',' ajouter un lien-')">
 ajouter un lien +
 </div>

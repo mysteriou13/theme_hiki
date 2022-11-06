@@ -51,8 +51,13 @@ Site regroupant les hikikomori ainsi que les reclus sociaux, les asociaux, tout 
 
 <div class = "d-flex">
 
-<div>
-    aside
+<div class = "aside">
+    
+    <?php
+    print_r($aside->liste_aside('test_section','link_aside'));    
+
+    ?>
+
 </div>
 
 <div class = "position_text">
