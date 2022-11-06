@@ -54,7 +54,8 @@ Site regroupant les hikikomori ainsi que les reclus sociaux, les asociaux, tout 
 <div class = "aside">
     
     <?php
-    print_r($aside->liste_aside('test_section','link_aside'));    
+    
+    $aside->liste_aside('test_section','link_aside');    
 
     ?>
 
