@@ -1,5 +1,5 @@
 /*
-Theme Name: Twenty Twenty
+Theme Name: Theme hiki
 Text Domain: twentytwenty
 Version: 1.1
 Requires at least: 4.7
@@ -118,5 +118,10 @@ a {
 .link_aside {
   font-family: 'Open Sans', sans-serif;
   color: #dd3333; }
+
+#footer {
+  position: 'absolute';
+  top: '4457px';
+  left: '0px'; }
 
 /*# sourceMappingURL=style.css.map */

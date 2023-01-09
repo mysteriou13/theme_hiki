@@ -67,10 +67,11 @@ Site regroupant les hikikomori ainsi que les reclus sociaux, les asociaux, tout 
 
 </div>
 
-<div class = "position_text">
+<div class = "position_text" >
 
 <?php
 
+/* affichage all post dans la page d'acceui*/
 
 if(!isset($_GET['cat']) && !isset($_GET['p']) && !isset($_GET['login'])){
 
@@ -111,9 +112,10 @@ if(isset($_GET['login']) && !empty($_GET['login'])){
    
 }
 
+require_once("footer.php");
+
 echo "</div>";
 
-require_once($file."/footer.php");
 
 ?>
 

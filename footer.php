@@ -1,4 +1,8 @@
-<footer>
+<footer id = "footer">
+
+<div class = "d-flex">
+footer
+</div>
 
 <?php 
 
