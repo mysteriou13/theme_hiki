@@ -253,7 +253,11 @@ include($login);
 
 </header>
 
-<div  style = "background-image: url('<?php echo $image_header?>'); background-repeat: no-repeat; height:44vh
+<div  style = "background-image: url('<?php echo $image_header?>'); background-repeat: no-repeat; height:44vh;
+
+position:relative;
+left:4%;
+width:92%;
 
 ">
 

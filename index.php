@@ -33,7 +33,12 @@ Version: 1.0
 
 
 
-<div>
+<div style = "width: 100%;">
+
+<div style = "
+   position: relative;
+    left: 35%;
+">
 
 <h1 class = "text-light">  Bienvenue sur Hikikomori-France  </h1>
 
@@ -43,13 +48,21 @@ Site regroupant les hikikomori ainsi que les reclus sociaux, les asociaux, tout 
 
 </div>
 
+</div>
+
 
 
 <div class = "text-light">
 
 
 
-<div class = "d-flex">
+<div class = "d-flex" style = "
+
+    width: 95%;
+    position: relative;
+    left: 5%;
+
+">
 
 <div class = "aside">
     
@@ -112,10 +125,10 @@ if(isset($_GET['login']) && !empty($_GET['login'])){
    
 }
 
+echo "</div></div>";
+
+
 require_once("footer.php");
-
-echo "</div>";
-
 
 ?>
 

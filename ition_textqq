@@ -1,0 +1,74 @@
+[1mdiff --git a/index.php b/index.php[m
+[1mindex fb32d7f..b97e0f7 100755[m
+[1m--- a/index.php[m
+[1m+++ b/index.php[m
+[36m@@ -13,6 +13,7 @@[m [minclude($file."/header.php");[m
+ [m
+ [m
+ <body>[m
+[32m+[m[32m<div>[m
+ [m
+ <?php [m
+ [m
+[36m@@ -27,9 +28,7 @@[m [mVersion: 1.0[m
+ [m
+ ?>[m
+ [m
+[31m-<div id = "main">[m
+ [m
+[31m-<div class = "d-flex ">[m
+ [m
+ [m
+ [m
+[36m@@ -43,31 +42,17 @@[m [mSite regroupant les hikikomori ainsi que les reclus sociaux, les asociaux, tout[m
+ [m
+ </div>[m
+ [m
+[32m+[m[32m</div>[m
+ [m
+ [m
+[31m-<div class = "text-light">[m
+ [m
+ [m
+ [m
+[31m-<div class = "d-flex">[m
+ [m
+[31m-<div class = "aside">[m
+[31m-    [m
+[31m-<div>[m
+[31m-    [m
+[31m-    <?php[m
+[31m-    [m
+[31m-    $aside->affiche_aside();[m
+ [m
+[31m-    ?>[m
+ [m
+[31m-    </div>[m
+ [m
+[31m-    [m
+[31m-[m
+[31m-</div>[m
+[31m-[m
+[31m-<div class = "position_text" >[m
+[32m+[m[32m<div class = "position_text">[m
+ [m
+ <?php[m
+ [m
+[36m@@ -112,12 +97,14 @@[m [mif(isset($_GET['login']) && !empty($_GET['login'])){[m
+    [m
+ }[m
+ [m
+[31m-require_once("footer.php");[m
+ [m
+[31m-echo "</div>";[m
+ [m
+ [m
+ ?>[m
+[32m+[m[32m</div>[m
+ [m
+[32m+[m[32m<div style = "color:white">[m
+[32m+[m[32m    footer[m
+[32m+[m[32m</div>[m
+ </body>[m
+ </html>[m
+\ No newline at end of file[m

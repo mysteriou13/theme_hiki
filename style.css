@@ -1,5 +1,5 @@
 /*
-Theme Name: Theme hiki
+Theme Name: Twenty Twenty
 Text Domain: twentytwenty
 Version: 1.1
 Requires at least: 4.7
@@ -22,9 +22,7 @@ with others.
 body {
   background-color: #171c2c;
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  margin-right: 5%;
-  margin-left: 5%; }
+  font-size: 16px; }
 
 header {
   background-color: #394c72; }
@@ -57,8 +55,8 @@ h1 {
   letter-spacing: 7.4px; }
 
 .position_text {
-  position: absolute;
-  left: 29%; }
+  position: relative;
+  left: 2%; }
 
 .category {
   display: none;
@@ -76,7 +74,7 @@ a {
 
 .aside {
   background-color: #262626;
-  width: 46%; }
+  width: 100%; }
 
 li {
   font-family: 'Pangolin';
@@ -119,9 +117,9 @@ a {
   font-family: 'Open Sans', sans-serif;
   color: #dd3333; }
 
-#footer {
-  position: 'absolute';
-  top: '4457px';
-  left: '0px'; }
+footer {
+  background-color: black;
+  position: relative;
+  left: 0%; }
 
 /*# sourceMappingURL=style.css.map */
