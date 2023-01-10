@@ -74,7 +74,9 @@ a {
 
 .aside {
   background-color: #262626;
-  width: 100%; }
+  width: 100%;
+  position: relative;
+  top: -8vh; }
 
 li {
   font-family: 'Pangolin';
