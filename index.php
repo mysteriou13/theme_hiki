@@ -37,9 +37,9 @@ Version: 1.0
 
 <div class =  "position-titre">
 
-<h1 class = "text-light">  Bienvenue sur Hikikomori-France  </h1>
+<h1>  Bienvenue sur Hikikomori-France  </h1>
 
-<div class = "text-light">
+<div class = "sous-titre-header">
 
 Site regroupant les hikikomori ainsi que les reclus sociaux, les asociaux, tout ceux qui ne s’intègrent pas dans la société
 
