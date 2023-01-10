@@ -35,10 +35,7 @@ Version: 1.0
 
 <div style = "width: 100%;">
 
-<div style = "
-   position: relative;
-    left: 35%;
-">
+<div class =  "position-titre">
 
 <h1 class = "text-light">  Bienvenue sur Hikikomori-France  </h1>
 
