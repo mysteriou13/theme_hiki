@@ -38,21 +38,8 @@ global $current_user;
    $forget_pass = site_url()."/?login=forgot_login";
    
   
-<<<<<<< HEAD
-   $sql = new \data\sql();
-   
-   $affiche = new \affiche\afficher();
-
-   $menu_header = new \menu_header\menu_header();
-   
-   $mail = new \mails\mail(true);
-
-   $template = new \template\template;
-  
-=======
    require_once $full_theme_hiki."/index.php";
 
->>>>>>> main
 
 ?>
 
