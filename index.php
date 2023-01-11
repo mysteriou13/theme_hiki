@@ -33,21 +33,49 @@ Version: 1.0
 
 
 
-<div  class = "position_text">
+<div style = "width: 100%;">
 
-<h1 class = "text-light">  Bienvenue sur Hikikomori-France  </h1>
+<div class =  "position-titre">
 
-<div class = "text-light">
+<h1>  Bienvenue sur Hikikomori-France  </h1>
+
+<div class = "sous-titre-header">
 
 Site regroupant les hikikomori ainsi que les reclus sociaux, les asociaux, tout ceux qui ne s’intègrent pas dans la société
 
 </div>
 
+</div>
+
+
 
 <div class = "text-light">
 
+
+
+<div class = "d-flex"  id = "mainbox">
+
+<div class = "aside">
+    
+<div>
+    
+    <?php
+    
+    $aside->affiche_aside();
+
+    ?>
+
+    </div>
+
+    
+
+</div>
+
+<div class = "position_text" >
+
 <?php
 
+/* affichage all post dans la page d'acceui*/
 
 if(!isset($_GET['cat']) && !isset($_GET['p']) && !isset($_GET['login'])){
 
@@ -88,9 +116,10 @@ if(isset($_GET['login']) && !empty($_GET['login'])){
    
 }
 
+echo "</div></div>";
 
 
-require_once($file."/footer.php");
+require_once("footer.php");
 
 ?>
 

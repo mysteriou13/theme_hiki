@@ -25,7 +25,7 @@ global $current_user;
 
   $logout = "wp_logout_url( home_url() ); "; 
   
-  $logout_url = wp_logout_url($hote);
+  $logout_url = wp_logout_url($logout);
 
    $pieces = explode("wp-content", $file);
    
@@ -33,25 +33,12 @@ global $current_user;
 
    $full_theme_hiki = $plugins."full_theme_bulder/";
 
-   $full_sql = $full_theme_hiki."sql.php";
-   
-   $full_affiche = $full_theme_hiki."affiche.php";
-
-   $menu_header = $full_theme_hiki."header.php";
+ 
 
    $forget_pass = site_url()."/?login=forgot_login";
    
-   require_once $full_sql;
-   
-   require_once $full_affiche;
-   
-   require_once $menu_header;
-
-   require_once $full_theme_hiki."/mail.php";
-
-   require_once $full_theme_hiki."/template.php";
-
   
+<<<<<<< HEAD
    $sql = new \data\sql();
    
    $affiche = new \affiche\afficher();
@@ -62,6 +49,10 @@ global $current_user;
 
    $template = new \template\template;
   
+=======
+   require_once $full_theme_hiki."/index.php";
+
+>>>>>>> main
 
 ?>
 
@@ -96,6 +87,14 @@ require_once($full_theme_hiki."./js/form_inscription.js");
 
 
 <div>
+
+<div>
+  <?php 
+  
+  $aside->insert_aside();
+
+  ?>
+</div>
 
 <div id = "add_link_nav"   onclick = "mouseaffichage('#form_nav_link',this.id,'ajouter un lien+',' ajouter un lien-')">
 ajouter un lien +
@@ -271,7 +270,11 @@ include($login);
 
 </header>
 
-<div  style = "background-image: url('<?php echo $image_header?>'); background-repeat: no-repeat; height:44vh
+<div  style = "background-image: url('<?php echo $image_header?>'); background-repeat: no-repeat; height:44vh;
+
+position:relative;
+left:4%;
+width:92%;
 
 ">
 
