@@ -5475,4 +5475,11 @@ footer {
     .ul {
       display: block; } }
 
+.form_login {
+  display: flex;
+  justify-content: space-evenly; }
+  @media (max-width: 400px) {
+    .form_login {
+      display: block; } }
+
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,12 @@
+.form_login{
+
+    display: flex;
+
+    justify-content: space-evenly;
+
+    @media  (max-width:$width_mobile) {
+
+        display: block;
+        
+    }
+}
