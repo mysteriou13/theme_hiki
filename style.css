@@ -56,7 +56,7 @@ h1 {
 
 .position_text {
   position: relative;
-  left: 2%; }
+  left: 11%; }
 
 .category {
   display: none;
@@ -76,7 +76,9 @@ a {
   background-color: #262626;
   position: relative;
   top: -8vh;
-  min-width: 38vh; }
+  min-width: 38vh;
+  position: relative;
+  left: 6%; }
 
 li {
   font-family: 'Pangolin';
@@ -135,5 +137,8 @@ footer {
   width: 95%;
   position: relative;
   left: 5%; }
+
+#billet {
+  max-width: 94%; }
 
 /*# sourceMappingURL=style.css.map */

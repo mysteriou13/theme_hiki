@@ -30,9 +30,11 @@ var cardwidth = (allwidthscreen * 70) / 100;
     let params = new URLSearchParams(document.location.search);
    let name = params.get("p");
 
+   let cat = params.get("cat");
+
     console.log(name);
     
-    if(name == null){
+    if(name == null && cat == null){
 
         $(".aside").width('72%');
 
