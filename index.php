@@ -53,13 +53,7 @@ Site regroupant les hikikomori ainsi que les reclus sociaux, les asociaux, tout 
 
 
 
-<div class = "d-flex" style = "
-
-    width: 95%;
-    position: relative;
-    left: 5%;
-
-">
+<div class = "d-flex"  id = "mainbox">
 
 <div class = "aside">
     
