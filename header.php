@@ -4,6 +4,7 @@ global $wpdb;
 
 global $current_user;
 
+  $theme_hiki = site_url().'/wp-content/themes/theme_hiki';
 
   $image = site_url().'/wp-content/themes/theme_hiki/image/';
 
@@ -154,7 +155,7 @@ include($file."/javascript/mouseaffiche.js");
 
 <div>
 
-<div class = "d-flex  justify-content-between">
+<div class = "box-header">
 
 <div>
 
@@ -164,7 +165,7 @@ include($file."/javascript/mouseaffiche.js");
 
 <nav> 
 
-<ul class = "d-flex  justify-content-around">
+<ul class = "ul">
 
     <li> <a href = "./?login=pub"> Pubs Projets de reclus/hiki </a> </li>
 
