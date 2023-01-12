@@ -5480,6 +5480,8 @@ footer {
   justify-content: space-evenly; }
   @media (max-width: 400px) {
     .form_login {
-      display: block; } }
+      display: block;
+      position: relative;
+      left: 7%; } }
 
 /*# sourceMappingURL=style.css.map */
