@@ -16,8 +16,6 @@ require_once($full_theme_hiki."/js/main_js.php");
 
 require_once($full_theme_hiki."/js/main_js.php");
 
-require_once($theme_hiki."/js/mobile.js");
-
 ?>
 
 <script>
