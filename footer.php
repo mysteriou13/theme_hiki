@@ -42,6 +42,12 @@ var cardwidth = (allwidthscreen * 70) / 100;
 
     }
 
+    if(screen.width <= 400){
+
+        $(".aside").width('94%');
+
+    }
+
 
     $("#mainbox").width('94%');
     

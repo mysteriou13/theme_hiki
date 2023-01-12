@@ -33,11 +33,11 @@ Version: 1.0
 
 
 
-<div style = "width: 100%;">
+<div>
 
 <div class =  "position-titre">
 
-<h1>  Bienvenue sur Hikikomori-France  </h1>
+<h1 > <div class = "titre-header"> Bienvenue sur Hikikomori-France </div> </h1>
 
 <div class = "sous-titre-header">
 
@@ -53,7 +53,7 @@ Site regroupant les hikikomori ainsi que les reclus sociaux, les asociaux, tout 
 
 
 
-<div class = "d-flex"  id = "mainbox">
+<div  class = "mainboxcontent">
 
 <div class = "aside">
     

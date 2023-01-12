@@ -61,6 +61,22 @@ letter-spacing: 7.4px;
     position: relative;
     left: 8%;
    
+    @media (max-width:$width_mobile){
+    
+        position: relative;
+        left: 0%;
+
+    }
+
+  }
+
+  .titre-header{
+
+    @media (max-width:$width_mobile) {
+        
+        width: 84%;
+
+    }
 
   }
 

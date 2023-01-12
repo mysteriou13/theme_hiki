@@ -5380,6 +5380,10 @@ h1, .h1 {
 .position_text {
   position: relative;
   left: 8%; }
+  @media (max-width: 400px) {
+    .position_text {
+      position: relative;
+      left: 0%; } }
 
 .category {
   display: none;
@@ -5398,10 +5402,16 @@ a {
 .aside {
   background-color: #262626;
   position: relative;
-  top: -8vh;
   min-width: 38vh;
   position: relative;
-  left: 6%; }
+  left: 6%;
+  top: -8vh; }
+  @media (max-width: 400px) {
+    .aside {
+      position: relative;
+      left: 0%;
+      top: 0vh;
+      width: 99%; } }
 
 li {
   font-family: 'Pangolin';
@@ -5452,6 +5462,10 @@ footer {
 .position-titre {
   position: relative;
   left: 35%; }
+  @media (max-width: 400px) {
+    .position-titre {
+      position: relative;
+      left: 0%; } }
 
 .sous-titre-header {
   color: #394c72; }
@@ -5483,5 +5497,11 @@ footer {
       display: block;
       position: relative;
       left: 7%; } }
+
+.mainboxcontent {
+  display: flex; }
+  @media (max-width: 400px) {
+    .mainboxcontent {
+      display: block; } }
 
 /*# sourceMappingURL=style.css.map */
