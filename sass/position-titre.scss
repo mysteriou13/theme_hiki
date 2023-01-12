@@ -1,4 +1,13 @@
 .position-titre{
     position: relative;
     left: 35%;
+
+
+
+    @media (max-width: $width_mobile) {
+
+        position: relative;
+        left: 0%;
+
+    }
 }
