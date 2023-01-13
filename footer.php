@@ -26,6 +26,14 @@ var newwidth = (allwidthscreen * 95) / 100;
 
 var cardwidth = (allwidthscreen * 70) / 100;
 
+var catid = "#liste_category";
+
+if(screen.width <= 400){
+
+ catid = "#mobilecat";
+
+}
+
     $("#footer").css("width", newwidth);
 
 

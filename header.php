@@ -34,16 +34,12 @@ global $current_user;
 
    $full_theme_hiki = $plugins."full_theme_bulder/";
 
- 
-
    $forget_pass = site_url()."/?login=forgot_login";
-   
   
    require_once $full_theme_hiki."/index.php";
 
 
 ?>
-
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -170,7 +166,7 @@ include($file."/javascript/mouseaffiche.js");
 
     <li> <a href = "./?login=pub"> Pubs Projets de reclus/hiki </a> </li>
 
-    <li id = "category" onclick = "mouseaffichage('#liste_category',this.id,'Catégories+',' Catégorie-')">
+    <li id = "category" onclick = "mouseaffichage(catid,this.id,'Catégories+',' Catégorie-')">
       Catégories+
     
       <p >
@@ -179,6 +175,13 @@ include($file."/javascript/mouseaffiche.js");
 </p>
 
     </li>
+    <div id  = "mobilecat" class = "category" >
+<?php 
+
+wp_list_categories("title_li=");
+
+?>
+</div>
     
     <li> <a href = "./?login=faq"> F.A.Q. </a> </li>
 
