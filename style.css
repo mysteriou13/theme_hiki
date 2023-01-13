@@ -5342,10 +5342,14 @@ progress {
 
   .d-print-none {
     display: none !important; } }
+html {
+  overflow-x: hidden; }
+
 body {
   background-color: #171c2c;
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-  font-size: 16px; }
+  font-size: 16px;
+  overflow-x: hidden; }
 
 header {
   background-color: #394c72; }
@@ -5385,9 +5389,9 @@ h1, .h1 {
       position: relative;
       left: 0%; } }
 
-.category {
-  display: none;
-  background-color: #394c72; }
+@media (max-width: 400px) {
+  .titre-header {
+    width: 84%; } }
 
 .link_nav {
   color: white;
@@ -5457,7 +5461,21 @@ a {
 footer {
   background-color: black;
   position: relative;
-  left: 0%; }
+  left: 0%;
+  justify-content: space-evenly; }
+
+.box_footer {
+  justify-content: space-around;
+  display: flex; }
+  @media (max-width: 400px) {
+    .box_footer {
+      display: block;
+      position: relative;
+      left: 30%; } }
+
+@media (max-width: 400px) {
+  .div_footer {
+    padding-top: 2%; } }
 
 .position-titre {
   position: relative;

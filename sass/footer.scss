@@ -4,4 +4,37 @@ footer{
   
   position: relative;
   left:0%;
+ 
+
+  justify-content: space-evenly;
+
+  @media (max-width:$width_mobile) {
+  
+  }
+}
+
+.box_footer{
+
+  justify-content: space-around;
+
+  display: flex;
+
+  @media (max-width:$width_mobile) {
+
+    display: block;
+
+    position: relative;
+    left: 30%;
+    
+  }
+
+}
+
+.div_footer{
+
+  @media (max-width:$width_mobile) {
+padding-top: 2%;  
+
+  }
+
 }

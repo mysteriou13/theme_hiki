@@ -1,12 +1,13 @@
-<footer id = "footer">
+<footer>
 
-<div class = "d-flex justify-content-around">
 
-<div class = "text-light">mention légal</div>
+<div class = "box_footer">
 
-<div class = "text-light"> qui somme nous ? </div>
+<div class = "text-light div_footer">mention légal</div>
 
-<div class = "text-light"> nous contacter  </div>
+<div class = "text-light div_footer"> qui somme nous ? </div>
+
+<div class = "text-light div_footer"> nous contacter  </div>
 
 </div>
 
@@ -34,7 +35,7 @@ if(screen.width <= 400){
 
 }
 
-    $("#footer").css("width", newwidth);
+
 
 
     let params = new URLSearchParams(document.location.search);
