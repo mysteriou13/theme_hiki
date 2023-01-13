@@ -29,7 +29,7 @@ var cardwidth = (allwidthscreen * 70) / 100;
 
 var catid = "#liste_category";
 
-if(screen.width <= 400){
+if(screen.width <= 800){
 
  catid = "#mobilecat";
 
@@ -47,7 +47,11 @@ if(screen.width <= 400){
     
     if(name == null && cat == null){
 
+        if(sreen.width >400){
+
         $(".aside").width('72%');
+
+        }
 
     }
 

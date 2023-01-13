@@ -10,4 +10,12 @@
         left: 0%;
 
     }
+
+    @media (min-width:$width_mobile) and (max-width:$width_tablette){
+
+        position: relative;
+        left: 0%;
+
+
+    }
 }

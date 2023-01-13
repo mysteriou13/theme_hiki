@@ -8,4 +8,11 @@
 
     }
 
+
+    @media (min-width:$width_mobile) and (max-width:$width_tablette){
+        
+        display: block;
+
+    }
+
 }

@@ -8,9 +8,6 @@ footer{
 
   justify-content: space-evenly;
 
-  @media (max-width:$width_mobile) {
-  
-  }
 }
 
 .box_footer{
@@ -19,7 +16,7 @@ footer{
 
   display: flex;
 
-  @media (max-width:$width_mobile) {
+  @media (min-width:$width_mobile) and (max-width:$width_tablette){
 
     display: block;
 
@@ -28,11 +25,12 @@ footer{
     
   }
 
+ 
 }
 
 .div_footer{
 
-  @media (max-width:$width_mobile) {
+  @media (min-width:$width_mobile) and (max-width:$width_tablette){
 padding-top: 2%;  
 
   }

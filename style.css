@@ -5416,6 +5416,11 @@ a {
       left: 0%;
       top: 0vh;
       width: 99%; } }
+  @media (min-width: 400px) and (max-width: 800px) {
+    .aside {
+      position: relative;
+      left: 0%;
+      top: 0vh; } }
 
 li {
   font-family: 'Pangolin';
@@ -5467,13 +5472,13 @@ footer {
 .box_footer {
   justify-content: space-around;
   display: flex; }
-  @media (max-width: 400px) {
+  @media (min-width: 400px) and (max-width: 800px) {
     .box_footer {
       display: block;
       position: relative;
       left: 30%; } }
 
-@media (max-width: 400px) {
+@media (min-width: 400px) and (max-width: 800px) {
   .div_footer {
     padding-top: 2%; } }
 
@@ -5481,6 +5486,10 @@ footer {
   position: relative;
   left: 35%; }
   @media (max-width: 400px) {
+    .position-titre {
+      position: relative;
+      left: 0%; } }
+  @media (min-width: 400px) and (max-width: 800px) {
     .position-titre {
       position: relative;
       left: 0%; } }
@@ -5506,6 +5515,9 @@ footer {
   @media (max-width: 400px) {
     .ul {
       display: block; } }
+  @media (min-width: 400px) and (max-width: 800px) {
+    .ul {
+      display: block; } }
 
 .form_login {
   display: flex;
@@ -5519,6 +5531,9 @@ footer {
 .mainboxcontent {
   display: flex; }
   @media (max-width: 400px) {
+    .mainboxcontent {
+      display: block; } }
+  @media (min-width: 400px) and (max-width: 800px) {
     .mainboxcontent {
       display: block; } }
 
