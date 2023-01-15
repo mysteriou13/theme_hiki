@@ -118,6 +118,9 @@ include("./wp-content/themes/theme_hiki/formulaire/form_add_el_header.php");
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<meta name = "description" content = "Bienvenue sur Hikikomori-France. Site regroupant 
+les hikikomori ainsi que les reclus sociaux, les asociaux, tout ceux qui ne s'intègrent pas dans la société.">
+
 <link href="<?php echo $style ?>" rel="stylesheet">
 
 
