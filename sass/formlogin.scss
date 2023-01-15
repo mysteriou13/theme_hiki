@@ -1,0 +1,11 @@
+.login-username{
+ 
+    display: flex;
+
+    @media (max-width:$width_mobile){
+
+        display: block;
+
+    }
+    
+}

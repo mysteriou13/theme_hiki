@@ -4,10 +4,16 @@
 
   <div class = "form_login">
 			<div class="login-username">
-				<label for="user_login" class = "link-light">
+			
+			<div>
+			<label for="user_login" class = "link-light">
     
         Identifiant ou adresse e-mail</label>
+             </div>
+
+			 <div>
 				<input type="text" name="log" id="user_login" class="input" value="" size="20" />
+             </div>
 </div>
 
 			<div class="login-password">

@@ -278,7 +278,6 @@ width:92%;
 wp_list_categories("title_li=");
 
 
-
 ?>
 
 </div>
