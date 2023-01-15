@@ -112,6 +112,8 @@ include("./wp-content/themes/theme_hiki/formulaire/form_add_el_header.php");
 
 <head>
 
+<title> hikikomori france</title>
+
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -133,8 +135,6 @@ include("./wp-content/themes/theme_hiki/formulaire/form_add_el_header.php");
   </style>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <script id = "myScript" >  
 
