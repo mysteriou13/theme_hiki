@@ -10,6 +10,8 @@ global $current_user;
 
  $logo = $image.'cropped-petitlogopng.png';
 
+ $ico = $image.'cropped-petitlogopng.ico';
+
  $image_header = $image.'headerhiki1opti.jpg';
 
   $style = site_url()."/wp-content/themes/theme_hiki/style.css";
@@ -37,6 +39,12 @@ global $current_user;
    $forget_pass = site_url()."/?login=forgot_login";
   
    require_once $full_theme_hiki."/index.php";
+
+    echo '<link rel="Shortcut Icon" type="image/x-icon" 
+    
+    href="'.$logo.'" />';
+
+
 
 
 ?>
@@ -117,6 +125,8 @@ include("./wp-content/themes/theme_hiki/formulaire/form_add_el_header.php");
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
 
 <meta name = "description" content = "Bienvenue sur Hikikomori-France. Site regroupant 
 les hikikomori ainsi que les reclus sociaux, les asociaux, tout ceux qui ne s'intègrent pas dans la société.">
