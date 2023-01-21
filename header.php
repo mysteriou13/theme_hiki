@@ -34,7 +34,7 @@ global $current_user;
    
    $plugins = $pieces[0]."/wp-content/plugins/";
 
-   $full_theme_hiki = $plugins."full_theme_bulder/";
+   $full_theme_hiki = "/opt/lampp/htdocs/wordpress/wp-content/plugins/full_theme_bulder/";
 
    $forget_pass = site_url()."/?login=forgot_login";
   
@@ -43,6 +43,8 @@ global $current_user;
     echo '<link rel="Shortcut Icon" type="image/x-icon" 
     
     href="'.$logo.'" />';
+
+
 
 
 
@@ -116,15 +118,13 @@ include("./wp-content/themes/theme_hiki/formulaire/form_add_el_header.php");
 </div>
 
 
-<header>
-
 <head>
 
 <title> hikikomori france</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width">
 
 
 
@@ -162,6 +162,9 @@ include($file."/javascript/mouseaffiche.js");
 
 
 </head>
+
+<header>
+
 
 <div>
 

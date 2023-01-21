@@ -5472,12 +5472,20 @@ footer {
 .box_footer {
   justify-content: space-around;
   display: flex; }
+  @media (max-width: 400px) {
+    .box_footer {
+      display: block; } }
   @media (min-width: 400px) and (max-width: 800px) {
     .box_footer {
       display: block;
       position: relative;
       left: 30%; } }
 
+@media (max-width: 400px) {
+  .div_footer {
+    height: 6vh;
+    position: relative;
+    left: 33%; } }
 @media (min-width: 400px) and (max-width: 800px) {
   .div_footer {
     padding-top: 2%; } }

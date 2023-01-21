@@ -1,4 +1,4 @@
-<footer>
+<footer id = "footer">
 
 
 <div class = "box_footer">
@@ -19,6 +19,7 @@ require_once($full_theme_hiki."/js/main_js.php");
 
 ?>
 
+</footer>
 <script>
 
 var allwidthscreen = screen.width; 
@@ -38,22 +39,25 @@ if(screen.width <= 800){
 
 
 
+
+
+
+
     let params = new URLSearchParams(document.location.search);
    let name = params.get("p");
 
    let cat = params.get("cat");
 
+   let login = params.get("login");
+
     console.log(name);
-    
-    if(name == null && cat == null){
 
-        if(sreen.width >400){
-
-        $(".aside").width('72%');
-
-        }
+    if(login !== null){
+ 
+        
 
     }
+    
 
     if(screen.width <= 400){
 
@@ -63,8 +67,9 @@ if(screen.width <= 800){
 
 
     $("#mainbox").width('94%');
+
+    $("#footer").width( screen.width);
     
 
     </script>
 
-</footer>

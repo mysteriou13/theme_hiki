@@ -5,8 +5,9 @@ footer{
   position: relative;
   left:0%;
  
-
   justify-content: space-evenly;
+
+ 
 
 }
 
@@ -15,6 +16,12 @@ footer{
   justify-content: space-around;
 
   display: flex;
+
+  @media   (max-width:$width_mobile) {
+   
+    display: block;
+
+  }
 
   @media (min-width:$width_mobile) and (max-width:$width_tablette){
 
@@ -29,6 +36,15 @@ footer{
 }
 
 .div_footer{
+
+  @media (max-width:$width_mobile) {
+    
+    height: 6vh;
+
+    position: relative;
+    left: 33%;
+
+  }
 
   @media (min-width:$width_mobile) and (max-width:$width_tablette){
 padding-top: 2%;  
