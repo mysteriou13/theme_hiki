@@ -71,28 +71,27 @@ Site regroupant les hikikomori ainsi que les reclus sociaux, les asociaux, tout 
 
 </div>
 
-<div class = "position_text" >
-
-
+<div class = "position_text text-light" >
 
 <?php
 
-/* affichage all post dans la page d'acceui*/
-
-if(!isset($_GET['cat']) && !isset($_GET['p']) && !isset($_GET['login'])){
-
-$affiche->affiche_liste_post();
-
-}
-
-if(isset($_GET['cat'])){
-        
-    echo $affiche->category_post($_GET['cat']);
-}
 
 
-if(isset($_GET['p']) && !empty($_GET['p'])){
+// Vérifier si c'est une catégorie
+if (is_category()) {
+
     
+     echo $affiche->category_post($post_id);
+
+}else {
+    // Catégorie non trouvée
+   
+}
+
+    
+if (is_single()) {
+
+
     $billet = get_post(htmlspecialchars($_GET['p']));
     $title = $billet->post_title;
 	$date = $billet->post_date;
@@ -101,6 +100,17 @@ if(isset($_GET['p']) && !empty($_GET['p'])){
 	$contenu = str_replace(']]>', ']]>', $contenu);
 
   require($file."/template/billet.php");
+
+} else {
+    
+}
+
+
+/* affichage all post dans la page d'acceui*/
+
+if (is_front_page()) {
+
+$affiche->affiche_liste_post();
 
 }
 
