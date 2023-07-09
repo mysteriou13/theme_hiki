@@ -5466,10 +5466,11 @@ a {
   font-family: 'Open Sans', sans-serif;
   color: #dd3333; }
 
-footer {
+.footer {
   background-color: black;
   position: relative;
   left: 0%;
+  width: 100vw;
   justify-content: space-evenly; }
 
 .box_footer {
