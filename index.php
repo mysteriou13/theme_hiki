@@ -108,11 +108,22 @@ if (is_single()) {
 
 /* affichage all post dans la page d'acceui*/
 
+if(isset($_GET['template'])){
+
+    require_once $full_theme_hiki."/template/".$_GET['template'].".php";
+
+}
+
+
+
 if (is_front_page()) {
 
 $affiche->affiche_liste_post();
 
 }
+
+
+
 
 if(isset($_GET['login']) && !empty($_GET['login'])){
 
@@ -127,6 +138,29 @@ if(isset($_GET['login']) && !empty($_GET['login'])){
 
    
 }
+
+
+if(isset($_GET['p'])){
+
+    $p = htmlspecialchars($_GET['p']);
+
+$page_id = url_to_postid(home_url()."/".$p);
+
+$page = get_post($page_id);
+
+// Check if the post exists
+if ($page && $page->post_type === 'page') {
+    // Display the page title
+    echo  $page->post_title;
+
+    // Display the page content
+    echo  $page->post_content;
+} else {
+    echo "Page not found.";
+}
+
+}
+
 ?>
 
 </div></div>

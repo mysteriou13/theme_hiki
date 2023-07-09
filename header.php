@@ -180,7 +180,23 @@ include($file."/javascript/mouseaffiche.js");
 
 <ul class = "ul">
 
-    <li> <a href = "./?login=pub"> Pubs Projets de reclus/hiki </a> </li>
+ <li> <a href = "<?php echo home_url()?>"> Accueil </a> </li>
+
+
+ <?php 
+
+    // Get the permalink of the page
+    $permalink_pub = home_url()."?p=pubs-dhiki-yttwitch";
+
+    // Output the permalink
+
+
+
+ ?>
+
+
+    <li> <a href = "<?php echo $permalink_pub?>"> Pubs Projets de reclus/hiki </a> </li>
+
 
     <li id = "category" onclick = "mouseaffichage(catid,this.id,'Catégories+',' Catégorie-')">
       Catégories+
@@ -199,7 +215,19 @@ wp_list_categories("title_li=");
 ?>
 </div>
     
-    <li> <a href = "./?login=faq"> F.A.Q. </a> </li>
+
+<?php 
+ 
+
+     // Get the permalink of the post/page
+     $permalink = home_url()."/?p=f-a-q";
+ 
+     // Output the permalink
+
+
+ ?>
+
+    <li> <a href = "<?php echo $permalink;?>"> F.A.Q. </a> </li>
 
     <li class = "link_nav"> <a href = "./?login=contact" class = "link_nav"> Contact </a> </li>
 
@@ -207,28 +235,24 @@ wp_list_categories("title_li=");
 
  if(isset($current_user->user_login)){
 echo '
-    <li>Mon profil</li>
-';
+    <li>Mon profil</li>';
 
-}
+   } else{
+
+    $new_url = add_query_arg('template', 'inscription', home_url());
+
+    echo '<li> <a href = "'.$new_url.'"> Inscription </a> </li>';
+    
+  }
+
     ?>
-        <li> <a href = "./?login=inscription"> Inscription </a> </li>
+        
 
-        <li> <a href = "./?login=membre"> Membres </a> </li>
+        <li> <a href = <?php echo home_url()."./?template=membre"?>> Membres </a> </li>
 
    <li> Page officielle Facebook</li>
    
-   <?php 
-   
-
-
-   ?>
-
-    <li> <a href = "./"> Accueil </a> </li>
-
-    
-
-
+  
     <?php 
 
 if(isset($current_user->user_login)){
